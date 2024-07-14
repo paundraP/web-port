@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- ICON -->
+    <link rel="icon" type="image/x-icon" href="assets/images/faviconn.ico">
+    <title>Paundra Pujo Darmawan</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Pujo</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>Paundra Pujo Darmawan</span>
+                </div>
+                <div class="featured-name">
+                    <p>I'm <span class="typedText"></span></p>
+                </div>
+                <div class="featured-text-info">
+                    <p>an Information Technology student on a journey of learning various aspects of digital technology. Currently exploring the realms of back-end development.
+                    </p>
+                </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="assets/images/myprofile.jpeg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll Down</p>
+            </a>
+          </div>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>My introduction</h3>
+                    <p>Hello! I am a student filled with enthusiasm to explore the digital world.
+                        I want to delve into every aspect of it. I believe that technology can bring positive change, 
+                        and I am ready to explore all its potential.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Language and frameworks</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Go</span>
+                        <span>C++</span>
+                        <span>NodeJS</span>
+                        <span>Gin</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Notion</span>
+                        <span>Postman</span>
+                        <span>Canva</span>
+                        <span>Visual Studio Code</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+       <section class="section" id="projects">
+        <div class="top-header">
+            <h1>Projects</h1>
+        </div>
+        <div class="project-container">
+            <a href="https://github.com/paundraP/Weather-Tracker" class="project-box" target="_blank" rel="noopener">
+                <i class="uil uil-github-alt"></i>
+                <h3>Weather Tracker</h3>
+                <label>Golang, HTML, CSS</label>
+            </a>
+            <a href="https://github.com/paundraP/Bookshelf-API" class="project-box" target="_blank" rel="noopener">
+                <i class="uil uil-github-alt"></i>
+                <h3>Bookshelf API</h3>
+                <label>Javascript, NodeJS</label>
+            </a>
+            <a href="https://github.com/paundraP/Go-practice/tree/main/go-postgres" class="project-box" target="_blank" rel="noopener">
+                <i class="uil uil-github-alt"></i>
+                <h3>Stocks API</h3>
+                <label>Golang, PostgreSQL, Mux</label>
+            </a>
+        </div>
+    </section>
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch</h1>
+            <span>Do you do you want to interact with me? contact me here</span>
+          </div>
+          <div>
+             <div class="colx">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: paundrapujodarmawan@gmail.com</p>
+                    <p><i class="uil uil-twitter"></i>paundrapujo</p>
+                </div>
+             </div>
+       </section>
+    </main>
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Paundra Pujo Darmawan</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon">
+                <a href="https://instagram.com/paundra.pujo" target="_blank" rel="noopener">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/paundra-pujo-darmawan-7147352a4/" target="_blank" rel="noopener">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">2024 paundrapujodarmawan</a> - All rights reserved</p>
+        </div>
+    </footer>
+    </div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
