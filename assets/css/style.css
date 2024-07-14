@@ -560,10 +560,25 @@ footer{
     .project-box{
         width: 100%;
     }
-    .form-inputs{
-        flex-direction: column;
+}
+/* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
+@media only screen and (max-width: 375px){
+    .featured-name{
+        font-size: 40px;
     }
-    .input-field{
+    .project-box{
         width: 100%;
+    }
+    .contact-info>h2{
+        color: var(--color-white);
+        margin-bottom: 10px;
+    }
+    .contact-info>p{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--color-white);
+        margin-block: 2px;
+        font-size: 12px;
     }
 }
