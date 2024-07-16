@@ -7,6 +7,39 @@ function myMenuFunction(){
     menuBtn.className = "nav-menu";
   }
 }
+/** DARK MODE */
+document.addEventListener('DOMContentLoaded', () => {
+  const themeButton = document.getElementById('theme-button');
+
+  // Function to toggle night mode
+  function toggleNightMode() {
+      document.body.classList.toggle('dark-mode');
+      // Save the user's preference
+      const isDarkMode = document.body.classList.contains('dark-mode');
+      localStorage.setItem('nightMode', isDarkMode);
+      updateThemeIcon(isDarkMode);
+  }
+
+  // Function to update the icon based on the mode
+  function updateThemeIcon(isDarkMode) {
+      if (isDarkMode) {
+          themeButton.classList.replace('bx-moon', 'bx-sun');
+      } else {
+          themeButton.classList.replace('bx-sun', 'bx-moon');
+      }
+  }
+
+  // Event listener for the toggle button
+  themeButton.addEventListener('click', toggleNightMode);
+
+  // Check and apply the user's preference on page load
+  const nightMode = localStorage.getItem('nightMode') === 'true';
+  if (nightMode) {
+      document.body.classList.add('dark-mode');
+  }
+  updateThemeIcon(nightMode);
+});
+
 /* ----- ADD SHADOW ON NAVIGATION BAR WHILE SCROLLING ----- */
 window.onscroll = function() {headerShadow()};
 function headerShadow() {

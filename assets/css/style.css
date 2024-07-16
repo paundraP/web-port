@@ -10,7 +10,68 @@
     --first-color-hover: rgb(40, 91, 212);
     --second-color: rgb(0, 201, 255);
     --third-color: rgb(192, 166, 49);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
+    --first-shadow-color: rgba(84, 82, 82, 0.1);
+}
+/* Dark mode variables */
+body.dark-mode {
+    --body-color: rgb(0, 0, 0);
+    --color-white: rgb(255, 255, 255);
+    --text-color-second: rgb(252, 252, 252);
+    --text-color-third: rgb(30, 159, 171);
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+    --second-color: rgb(0, 201, 255);
+    --third-color: rgb(192, 166, 49);
+    --first-shadow-color: rgba(16, 236, 192, 0.1);
+}
+
+/* Existing CSS */
+body {
+    background-color: var(--body-color);
+    color: var(--text-color-second);
+}
+
+/* Dark mode styles */
+body.dark-mode nav {
+    background-color: var(--header-bg);
+    color: var(--color-white);
+}
+
+body.dark-mode footer {
+    background-color: var(--footer-bg);
+    color: var(--color-white);
+}
+
+body.dark-mode .nav-link {
+    color: var(--color-white);
+}
+
+body.dark-mode .nav-link.active-link {
+    color: var(--primary-color);
+}
+
+body.dark-mode .featured-text-card span,
+body.dark-mode .featured-name p,
+body.dark-mode .featured-text-info p {
+    color: var(--color-white);
+}
+
+body.dark-mode .skills-header h3,
+body.dark-mode .skills-list span {
+    color: var(--color-white);
+}
+
+body.dark-mode .project-box h3,
+body.dark-mode .project-box label {
+    color: var(--color-white);
+}
+
+body.dark-mode .footer-social-icons .icon a i {
+    color: var(--color-white);
+}
+
+body.dark-mode .bottom-footer p {
+    color: var(--color-white);
 }
 /* ----- BASE ----- */
 *{
@@ -18,25 +79,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-/* ----- SMOOTH SCROLL ----- */
-html{
-    scroll-behavior: smooth;
-}
-/* ----- CHANGE THE SCROLL BAR DESIGN ----- */
-::-webkit-scrollbar{
-    width: 10px;
-    border-radius: 25px;
-}
-::-webkit-scrollbar-track{
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb{
-    background: #ccc;
-    border-radius: 30px;
-}
-::-webkit-scrollbar-thumb:hover{
-    background: #bbb;
 }
 /* ---##-- REUSABLE CSS --##--- */
 /* ----- GLOBAL BUTTON DESIGN ----- */
@@ -233,26 +275,6 @@ nav{
         border-radius: 45% 55% 45% 55%;
     }
 }
-.scroll-btn{
-   position: absolute;
-   bottom: 0;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 150px;
-   height: 50px;
-   gap: 5px;
-   text-decoration: none;
-   color: var(--text-color-second);
-   background: var(--color-white);
-   border-radius: 30px;
-   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
-}
-.scroll-btn i{
-    font-size: 20px;
-}
 /* ----- MAIN BOX ----- */
 .section{
     padding-block: 5em;
@@ -281,7 +303,7 @@ nav{
     color: #999;
 }
 h3{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     color: var(--text-color-second);
     margin-bottom: 15px;
@@ -295,25 +317,14 @@ h3{
     padding-block: 30px 70px;
     padding-inline: 20px;
     width: 100%;
-    background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    background: var(--body-color);
+    box-shadow: 5px 10px 12px 5px var(--first-shadow-color);
     border-radius: 20px;
 }
 .about-info p{
     text-align: left;
     font-size: 15px;
-    color: #777;
-}
-.about-btn button{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background: var(--first-color);
-    color: var(--color-white);
-    border-radius: 30px;
-}
-.about-btn button:hover{
-    background: var(--first-color-hover);
+    color: (#a8a2a2);
 }
 /* ----- ABOUT / SKILLS BOX ----- */
 .skills-box{
@@ -351,7 +362,7 @@ h3{
     flex-direction: column;
     width: 30%;
     height: 250px;
-    background: var(--color-white);
+    background: var(--color-second);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;

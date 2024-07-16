@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <!-- --------- CSS ---------- -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- --------- BOXICONS ---------- -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- ICON -->
     <link rel="icon" type="image/x-icon" href="assets/images/faviconn.ico">
     <title>Paundra Pujo Darmawan</title>
@@ -14,7 +16,7 @@
 <body>
    <div class="container">
     <!-- --------------- HEADER --------------- -->
-      <nav id="header">
+    <nav id="header">
         <div class="nav-logo">
             <p class="nav-name">Pujo</p>
             <span>.</span>
@@ -33,14 +35,14 @@
                     <a href="#projects" class="nav-link">Projects</a>
                     <div class="circle"></div>
                 </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
             </ul>
         </div>
         <div class="nav-menu-btn">
             <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+        <!-- Night Mode Toggle -->
+        <div class="nav__toggle">
+            <i class='bx bx-moon' id="theme-button"></i>
         </div>
       </nav>
     <!-- -------------- MAIN ---------------- -->
@@ -64,12 +66,7 @@
                 <img src="assets/images/myprofile.jpeg" alt="avatar">
             </div>
           </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
+
        </section>
        <!-- -------------- ABOUT BOX ---------------- -->
        <section class="section" id="about">
@@ -79,8 +76,8 @@
           <div class="row">
             <div class="col">
                 <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>Hello! I am a student filled with enthusiasm to explore the digital world.
+                    <h3>Hi!</h3>
+                    <p>My full name is Paundra Pujo Darmawan, but you can call me Pujo. I am a student filled with enthusiasm to explore the digital world. My first experience with digital technology was when I was introduced to computers in elementary school.
                         I want to delve into every aspect of it. I believe that technology can bring positive change, 
                         and I am ready to explore all its potential.
                     </p>
@@ -147,21 +144,6 @@
             </a>
         </div>
     </section>
-       <!-- -------------- CONTACT BOX ---------------- -->
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you do you want to interact with me? contact me here</span>
-          </div>
-          <div>
-             <div class="colx">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i>paundrapujodarmawan@gmail.com</p>
-                    <p><i class="uil uil-twitter"></i>paundrapujo</p>
-                </div>
-             </div>
-       </section>
     </main>
     <!-- --------------- FOOTER --------------- -->
     <footer>
@@ -179,9 +161,6 @@
                 <li class="footer_menu_list">
                     <a href="#projects">Projects</a>
                 </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
             </ul>
         </div>
         <div class="footer-social-icons">
@@ -193,6 +172,16 @@
             <div class="icon">
                 <a href="https://www.linkedin.com/in/paundra-pujo-darmawan-7147352a4/" target="_blank" rel="noopener">
                     <i class="uil uil-linkedin-alt"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/paundraP" target="_blank" rel="noopener">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://twitter.com/paundrapujo" target="_blank" rel="noopener">
+                    <i class="uil uil-twitter"></i>
                 </a>
             </div>
         </div>
