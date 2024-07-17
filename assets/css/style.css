@@ -526,6 +526,9 @@ footer{
     .nav_menu_list {
         flex-direction: column;
     }
+    .nav-menu.responsive{
+        left: 0;
+    }
 
     .nav-menu-btn {
         display: flex;
