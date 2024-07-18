@@ -33,7 +33,9 @@ body {
 
 /* Dark mode styles */
 body.dark-mode nav {
-    background-color: var(--body-cgitolor);
+    position: fixed;
+    display: flex;
+    background-color: var(--body-color);
     color: var(--color-white);
 }
 
